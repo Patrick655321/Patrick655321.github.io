@@ -1,0 +1,35 @@
+$black: #0B090A; // BLACK
+$charcoal: #161A1D; // CHARCOAL
+$maroon: #660708; // MAROON
+$lipstick: #A4161A; //LIPSTICK
+$red: #BA181B; //RED
+$pastel: #E5383B; //PASTEL
+$elephant: #B1A7A6; //ELEPHANT
+$foil: #D3D3D3; //FOIL
+$ivory: #F5F3F4;  //IVORY
+$white: #FFFFFF; //WHITE
+
+
+
+body {
+    background-color: $foil;
+    h1 {
+        background-color: $foil;
+        color: $lipstick;
+        display: block;
+        font-size: 200px;
+        text-align: center;
+    }
+    ul {
+      display: inline;
+    }
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: $foil;
+}
+
+
+
