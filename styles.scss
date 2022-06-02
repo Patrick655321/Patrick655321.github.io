@@ -1,13 +1,11 @@
-$black: #0B090A; // BLACK
-$charcoal: #161A1D; // CHARCOAL
-$maroon: #660708; // MAROON
-$lipstick: #A4161A; //LIPSTICK
-$red: #BA181B; //RED
-$pastel: #E5383B; //PASTEL
-$elephant: #B1A7A6; //ELEPHANT
-$foil: #D3D3D3; //FOIL
-$ivory: #F5F3F4;  //IVORY
-$white: #FFFFFF; //WHITE
+$back1: #557a95; 
+$back2: #7395AE;
+$text1 : #000000;
+$text2: #ffffff;
+$sec1: #B1A296; 
+$sec2: #5D5C61;
+
+
 
 
 * {
@@ -15,18 +13,14 @@ $white: #FFFFFF; //WHITE
     padding: 0vw;
 }
 
-header {
-
-}
-
 body {
-    background-color: $charcoal;
+    background-color: $back2;
     h1 {
         display: flex;
         justify-content: center;
-        background-color: $charcoal;
-        color: $lipstick;
-        font-size: 200px;
+        background-color: $back2;
+        color: $text1;
+        font-size: 10vw;
     }
 }
 
@@ -34,7 +28,14 @@ body {
 #navbar {
     display: flex;
     justify-content: center;
-    background-color: $foil;
+    background-color: $back1;
+    list-style: none;
+    a {
+    color: #ffffff;
+    }
+    li {
+        padding: 2vw;
+    }
 }
 
 #imgcont {
@@ -52,7 +53,26 @@ body {
 }
 
 footer {
-    background-color: black;
-    color: $lipstick;
-    font-size: 75px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    background-color: $back1;
+    color: $text1;
+    font-size: 50px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    .conli {
+    height: 5vh;
+    padding: 2vw;
+}
+}
+
+h2 {
+    text-align: center;
 }
