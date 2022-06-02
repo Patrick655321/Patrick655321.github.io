@@ -10,20 +10,26 @@ $ivory: #F5F3F4;  //IVORY
 $white: #FFFFFF; //WHITE
 
 
+* {
+    margin: 0vw;
+    padding: 0vw;
+}
+
+header {
+
+}
 
 body {
-    background-color: $foil;
+    background-color: $charcoal;
     h1 {
-        background-color: $foil;
+        display: flex;
+        justify-content: center;
+        background-color: $charcoal;
         color: $lipstick;
-        display: block;
         font-size: 200px;
-        text-align: center;
-    }
-    ul {
-      display: inline;
     }
 }
+
 
 #navbar {
     display: flex;
@@ -31,5 +37,22 @@ body {
     background-color: $foil;
 }
 
+#imgcont {
+    flex-direction: column;
+    justify-content: center;
+    img {
+        margin-left: 20vw;
+        padding: 5vw;
+        border-radius: 50%;
+        width: 50vw;
+        height: 50vw;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
 
-
+footer {
+    background-color: black;
+    color: $lipstick;
+    font-size: 75px;
+}
