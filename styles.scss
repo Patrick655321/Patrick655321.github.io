@@ -115,7 +115,16 @@ h2 {
     }
     img {
         height: 25vw;
-        align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw;
+    }
+    #pictub {        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
     }
 }
 

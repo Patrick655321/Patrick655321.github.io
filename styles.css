@@ -80,7 +80,14 @@ h2 {
   padding-top: 1vw; }
 .blogs img {
   height: 25vw;
-  align: center; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw; }
+.blogs #pictub {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .conli {
   height: 20vw; }
