@@ -5,15 +5,17 @@ $text2: #ffffff;
 $sec1: #B1A296; 
 $sec2: #5D5C61;
 
+@mixin frontitems() {
+        img {
+            margin-left: 20vw;
+            padding: 5vw;
+            border-radius: 50%;
+            width: 50vw;
+            height: 50vw;
+        }
+    }
 
-
-
-* {
-    margin: 0vw;
-    padding: 0vw;
-}
-
-header {
+@mixin nav1() {
     ul {
         list-style: none;
         li {
@@ -23,6 +25,39 @@ header {
             margin: 1vw;
         }
     }
+}
+
+@mixin navbar() {
+    display: flex;
+    justify-content: center;
+    background-color: $back1;
+    list-style: none;
+    a {
+    color: #ffffff;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        .conli {
+        height: 5vh;
+        padding: 2vw;
+        li {
+            background-color: $sec2;
+            border-radius: 20px;
+        }
+    }
+    
+    }
+}
+
+* {
+    margin: 0vw;
+    padding: 0vw;
+}
+
+header {
+@include nav1;
 }
 
 body {
@@ -52,42 +87,16 @@ body {
 }
 
 #navbar {
-    display: flex;
-    justify-content: center;
-    background-color: $back1;
-    list-style: none;
-    a {
-    color: #ffffff;
-    }
-    ul {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        .conli {
-        height: 5vh;
-        padding: 2vw;
-        li {
-            background-color: $sec2;
-            border-radius: 20px;
-        }
-    }
-    
-    }
+@include navbar;
 }
 
 #imgcont {
+    @include frontitems;
     flex-direction: column;
     justify-content: center;
-    img {
-        margin-left: 20vw;
-        padding: 5vw;
-        border-radius: 50%;
-        width: 50vw;
-        height: 50vw;
-        justify-content: space-around;
-        align-items: center;
     }
-}
+
+
 
 footer {
     display: block;
@@ -128,6 +137,14 @@ h2 {
     }
 }
 
+#contactlist {
+    display: flex;
+    
+}
 .conli {
-        height: 20vw;
+        justify-content: space-around;
+        align-items: space-around;
+        height: 35vw;
+        width: 35vw;
+        padding: 5vw;
 }

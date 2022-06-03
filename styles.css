@@ -57,9 +57,7 @@ body {
     padding: 5vw;
     border-radius: 50%;
     width: 50vw;
-    height: 50vw;
-    justify-content: space-around;
-    align-items: center; }
+    height: 50vw; }
 
 footer {
   display: block;
@@ -89,7 +87,14 @@ h2 {
   justify-content: center;
   flex-wrap: wrap; }
 
+#contactlist {
+  display: flex; }
+
 .conli {
-  height: 20vw; }
+  justify-content: space-around;
+  align-items: space-around;
+  height: 35vw;
+  width: 35vw;
+  padding: 5vw; }
 
 /*# sourceMappingURL=styles.css.map */
