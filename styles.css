@@ -1,3 +1,12 @@
+@font-face {
+  font-family: h1font;
+  src: url(./fonts/specialelite.ttf); }
+@font-face {
+  font-family: h2font;
+  src: url(./fonts/ubuntu.ttf); }
+@font-face {
+  font-family: pfont;
+  src: url(./fonts/spacemono.ttf); }
 p a:hover {
   background-color: #B1A296; }
 
@@ -14,16 +23,19 @@ header ul {
     margin: 1vw; }
 
 body {
+  font-family: pfont;
   background-color: #7395AE;
   margin-bottom: 10vw; }
   body a {
-    color: #000000; }
+    color: #000000;
+    font-weight: bold; }
   body h1 {
     display: flex;
     justify-content: center;
     background-color: #7395AE;
     color: #000000;
-    font-size: 10vw; }
+    font-size: 10vw;
+    font-family: h1font; }
   body h2 {
     padding: 5vw; }
 

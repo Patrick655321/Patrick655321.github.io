@@ -5,6 +5,22 @@ $text2: #ffffff;
 $sec1: #B1A296; 
 $sec2: #5D5C61;
 
+@font-face {
+    font-family: h1font;
+    src: url(./fonts/specialelite.ttf);
+  }
+
+@font-face {
+    font-family: h2font;
+    src: url(./fonts/ubuntu.ttf);
+  }
+
+  @font-face {
+    font-family: pfont;
+    src: url(./fonts/spacemono.ttf);
+  }
+
+
 @mixin frontitems() {
         .menimg {
             margin-left: 20vw;
@@ -66,9 +82,11 @@ header {
 }
 
 body {
+    font-family: pfont;
     background-color: $back2;
     a {
         color: $text1;
+        font-weight: bold;
     }
     h1 {
         display: flex;
@@ -76,6 +94,7 @@ body {
         background-color: $back2;
         color: $text1;
         font-size: 10vw;
+        font-family: h1font;
        }
        h2 {
            padding: 5vw;
@@ -294,7 +313,7 @@ h2 {
         transform: rotate(360deg) scale(1.5);
         transition: 3s;
         animation-iteration-count:5
-        
+
     }
     }
 }
