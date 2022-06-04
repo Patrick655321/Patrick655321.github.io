@@ -34,7 +34,7 @@ $sec2: #5D5C61;
     background-color: $back1;
     list-style: none;
     a {
-    color: #ffffff;
+    color: $text2;
     }
     ul {
         display: flex;
@@ -53,7 +53,7 @@ $sec2: #5D5C61;
 }
 
 a:hover {
-    background-color:#B1A296
+    background-color:$sec1;
 }
 
 * {
@@ -143,13 +143,71 @@ h2 {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+
+        #recipe1{
+            position: relative;
+            text-align: center;
+            color: $text2;
+        
+        .butrum {
+            position: absolute;
+            top: 5vh;
+            left: 20vw;
+            background-color: $text1;
+            opacity: 0%;
+        }
+        .butrum:hover {
+                opacity: 80%;
+        }
+        
+        .hevglit {
+            position: absolute;
+            top: 5vh;
+            right: 20vw;
+            background-color: $text1;
+            opacity: 0%;
+        }
+        .hevglit:hover {
+            opacity: 80%;
+        }
+        .gorgeous {
+            position: absolute;
+            bottom: 5vh;
+            left: 20vw;
+            background-color: $text1;
+            opacity: 0%;
+        }
+        .gorgeous:hover {
+            opacity: 80%;
+        }
+        .cazzo {
+            position: absolute;
+                bottom: 5vh;
+                right: 20vw;
+                background-color: $text1;
+                opacity: 0%;
+        }
+        .cazzo:hover {
+            opacity: 80%;
+        }
+    }
+    #pictub2 {        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        img {
+        height: 25vw;
+        padding: 1vw;
+        }   
     }
     img {
         height: 25vw;
         padding: 1vw;
-    }
-    
+        }   
 }
+}
+
+
 
 #contactlist {
     display: flex;
@@ -191,3 +249,20 @@ h2 {
             margin: 0px;
         }
     } }
+    
+    .clickbait {
+        text-align: center;
+    }
+    #whoami {
+        display: none;
+    }
+
+    section {
+        padding-top: 10vh;
+        display: none;
+    }
+    
+    input[type=checkbox]:checked ~ section{
+        display: block;
+    }
+
