@@ -52,8 +52,8 @@ $sec2: #5D5C61;
     }
 }
 
-a:hover {
-    background-color:$sec1;
+p a {
+    background-color: $sec1;
 }
 
 * {
@@ -110,10 +110,22 @@ body {
     }
 }
 
+    
+.clickbait {
+    text-align: center;
+}
+#whoami {
+    display: none;
+}
 
+section {
+    padding-top: 10vh;
+    display: none;
+}
 
-
-
+input[type=checkbox]:checked ~ section{
+    display: block;
+}
 
 footer {
     display: block;
@@ -187,7 +199,7 @@ h2 {
                 background-color: $text1;
                 opacity: 0%;
         }
-        .cazzo:hover {
+        .cazzo:hover:after {
             opacity: 80%;
         }
     }
@@ -218,6 +230,7 @@ h2 {
         width: 10vw;
         padding: 5vw;
 }
+
 
 @media only screen and (min-width: 800px) {
 
@@ -265,4 +278,18 @@ h2 {
     input[type=checkbox]:checked ~ section{
         display: block;
     }
+
+@media only screen and (min-width: 1000px) {
+    #contactlist {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100vw; 
+    .conli {
+       height:20vw;
+       width: 20vw;
+       padding:15vw;
+    }
+    }
+}
 

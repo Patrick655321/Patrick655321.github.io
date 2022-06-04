@@ -1,4 +1,4 @@
-a:hover {
+p a {
   background-color: #B1A296; }
 
 * {
@@ -70,6 +70,19 @@ body {
     transition: 2s;
     background-color: transparent; }
 
+.clickbait {
+  text-align: center; }
+
+#whoami {
+  display: none; }
+
+section {
+  padding-top: 10vh;
+  display: none; }
+
+input[type=checkbox]:checked ~ section {
+  display: block; }
+
 footer {
   display: block;
   position: fixed;
@@ -125,7 +138,7 @@ h2 {
       right: 20vw;
       background-color: #000000;
       opacity: 0%; }
-    .blogs #pictub #recipe1 .cazzo:hover {
+    .blogs #pictub #recipe1 .cazzo:hover:after {
       opacity: 80%; }
   .blogs #pictub #pictub2 {
     display: flex;
@@ -184,5 +197,16 @@ section {
 
 input[type=checkbox]:checked ~ section {
   display: block; }
+
+@media only screen and (min-width: 1000px) {
+  #contactlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vw; }
+    #contactlist .conli {
+      height: 20vw;
+      width: 20vw;
+      padding: 15vw; } }
 
 /*# sourceMappingURL=styles.css.map */
