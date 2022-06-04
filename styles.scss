@@ -52,7 +52,7 @@ $sec2: #5D5C61;
     }
 }
 
-p a {
+p a:hover{
     background-color: $sec1;
 }
 
@@ -282,13 +282,19 @@ h2 {
 @media only screen and (min-width: 1000px) {
     #contactlist {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         flex-wrap: wrap;
         height: 100vw; 
     .conli {
-       height:20vw;
-       width: 20vw;
-       padding:15vw;
+       height:10vw;
+       width: 10vw;
+       padding:5vw;
+    }
+    .conli:hover {
+        transform: rotate(360deg) scale(1.5);
+        transition: 3s;
+        animation-iteration-count:5
+        
     }
     }
 }
