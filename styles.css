@@ -1,3 +1,6 @@
+a:hover {
+  background-color: #B1A296; }
+
 * {
   margin: 0vw;
   padding: 0vw; }
@@ -52,12 +55,20 @@ body {
 #imgcont {
   flex-direction: column;
   justify-content: center; }
-  #imgcont img {
+  #imgcont .menimg {
     margin-left: 20vw;
     padding: 5vw;
     border-radius: 50%;
     width: 50vw;
-    height: 50vw; }
+    height: 50vw;
+    background-color: #557a95; }
+
+#imgcont a:hover {
+  background-color: transparent; }
+  #imgcont a:hover .menimg {
+    transform: scale(1.2);
+    transition: 2s;
+    background-color: transparent; }
 
 footer {
   display: block;
@@ -76,25 +87,47 @@ h2 {
   padding-top: 5vw; }
 .blogs h4 {
   padding-top: 1vw; }
-.blogs img {
-  height: 25vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1vw; }
 .blogs #pictub {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
+.blogs img {
+  height: 25vw;
+  padding: 1vw; }
 
 #contactlist {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
 
 .conli {
-  justify-content: space-around;
-  align-items: space-around;
-  height: 35vw;
-  width: 35vw;
+  height: 10vw;
+  width: 10vw;
   padding: 5vw; }
+
+@media only screen and (min-width: 800px) {
+  #contactlist {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vw; }
+
+  .conli {
+    height: 20vw;
+    width: 20vw;
+    padding: 15vw; }
+
+  #imgcont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px; }
+    #imgcont a {
+      display: inline; }
+    #imgcont .menimg {
+      padding: 5vw;
+      border-radius: 50%;
+      width: 30vw;
+      height: 30vw;
+      margin: 0px; } }
 
 /*# sourceMappingURL=styles.css.map */
