@@ -89,8 +89,7 @@ body {
   display: none; }
 
 section {
-  padding-top: 10vh;
-  display: none; }
+  padding-top: 10vh; }
 
 input[type=checkbox]:checked ~ section {
   display: block; }
@@ -116,6 +115,8 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
+  .blogs #pictub img {
+    border-radius: 20%; }
   .blogs #pictub #recipe1 {
     position: relative;
     text-align: center;
@@ -123,39 +124,42 @@ h2 {
     .blogs #pictub #recipe1 .butrum {
       position: absolute;
       top: 5vh;
-      left: 20vw;
+      left: 12vw;
       background-color: #000000;
-      opacity: 0%; }
-    .blogs #pictub #recipe1 .butrum:hover {
-      opacity: 80%; }
+      opacity: 0%;
+      width: 35%;
+      height: 40%; }
     .blogs #pictub #recipe1 .hevglit {
       position: absolute;
       top: 5vh;
-      right: 20vw;
+      right: 12vw;
       background-color: #000000;
-      opacity: 0%; }
-    .blogs #pictub #recipe1 .hevglit:hover {
-      opacity: 80%; }
+      opacity: 0%;
+      width: 35%;
+      height: 35%; }
     .blogs #pictub #recipe1 .gorgeous {
       position: absolute;
-      bottom: 5vh;
-      left: 20vw;
+      bottom: 10vh;
+      left: 12vw;
       background-color: #000000;
-      opacity: 0%; }
-    .blogs #pictub #recipe1 .gorgeous:hover {
-      opacity: 80%; }
+      opacity: 0%;
+      width: 35;
+      height: 40%; }
     .blogs #pictub #recipe1 .cazzo {
       position: absolute;
       bottom: 5vh;
       right: 20vw;
       background-color: #000000;
-      opacity: 0%; }
-    .blogs #pictub #recipe1 .cazzo:hover:after {
-      opacity: 80%; }
+      opacity: 0%;
+      right: 12vw;
+      width: 35%;
+      height: 40%; }
   .blogs #pictub #pictub2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; }
+    .blogs #pictub #pictub2 .blogpic {
+      border-radius: 20%; }
     .blogs #pictub #pictub2 img {
       height: 25vw;
       padding: 1vw; }
@@ -210,6 +214,9 @@ section {
 input[type=checkbox]:checked ~ section {
   display: block; }
 
+footer {
+  font-size: 20px; }
+
 @media only screen and (min-width: 1000px) {
   #contactlist {
     display: flex;
@@ -223,6 +230,55 @@ input[type=checkbox]:checked ~ section {
     #contactlist .conli:hover {
       transform: rotate(360deg) scale(1.5);
       transition: 3s;
-      animation-iteration-count: 5; } }
+      animation-iteration-count: 5; }
+
+  #recipe1 {
+    position: relative;
+    text-align: center;
+    color: #ffffff; }
+    #recipe1 .butrum {
+      position: absolute;
+      top: 5vh;
+      left: 12vw;
+      background-color: #000000;
+      opacity: 0%;
+      width: 35%;
+      height: 40%; }
+    #recipe1 .butrum:hover {
+      opacity: 80%; }
+    #recipe1 .hevglit {
+      position: absolute;
+      top: 5vh;
+      right: 12vw;
+      background-color: #000000;
+      opacity: 0%;
+      width: 35%;
+      height: 40%; }
+    #recipe1 .hevglit:hover {
+      opacity: 80%; }
+    #recipe1 .gorgeous {
+      position: absolute;
+      bottom: 5vh;
+      left: 12vw;
+      background-color: #000000;
+      opacity: 0%;
+      width: 35%;
+      height: 40%; }
+    #recipe1 .gorgeous:hover {
+      opacity: 80%; }
+    #recipe1 .cazzo {
+      position: absolute;
+      bottom: 5vh;
+      right: 20vw;
+      background-color: #000000;
+      opacity: 0%;
+      right: 12vw;
+      width: 35%;
+      height: 40%; }
+    #recipe1 .cazzo:hover {
+      opacity: 80%; }
+
+  footer {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */

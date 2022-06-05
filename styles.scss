@@ -137,11 +137,11 @@ body {
     display: none;
 }
 
+
+
 section {
     padding-top: 10vh;
-    display: none;
 }
-
 input[type=checkbox]:checked ~ section{
     display: block;
 }
@@ -162,8 +162,8 @@ h2 {
     text-align: center;
 }
 
-
 .blogs {
+
     h3 {
         padding-top: 5vw;
     }
@@ -174,6 +174,10 @@ h2 {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        img {
+                border-radius: 20%;
+            
+        }
 
         #recipe1{
             position: relative;
@@ -183,49 +187,52 @@ h2 {
         .butrum {
             position: absolute;
             top: 5vh;
-            left: 20vw;
+            left: 12vw;
             background-color: $text1;
             opacity: 0%;
+            width: 35%;
+            height: 40%;
         }
-        .butrum:hover {
-                opacity: 80%;
-        }
-        
+
         .hevglit {
             position: absolute;
             top: 5vh;
-            right: 20vw;
+            right: 12vw;
             background-color: $text1;
             opacity: 0%;
+            width: 35%;
+            height: 35%;
         }
-        .hevglit:hover {
-            opacity: 80%;
-        }
+
         .gorgeous {
             position: absolute;
-            bottom: 5vh;
-            left: 20vw;
+            bottom: 10vh;
+            left: 12vw;
             background-color: $text1;
             opacity: 0%;
+            width: 35;
+            height: 40%;
         }
-        .gorgeous:hover {
-            opacity: 80%;
-        }
+
         .cazzo {
             position: absolute;
                 bottom: 5vh;
                 right: 20vw;
                 background-color: $text1;
                 opacity: 0%;
+                right: 12vw;
+                width: 35%;
+                height: 40%;
         }
-        .cazzo:hover:after {
-            opacity: 80%;
-        }
-    }
+
+}
     #pictub2 {        
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        .blogpic {
+            border-radius: 20%;
+        }
         img {
         height: 25vw;
         padding: 1vw;
@@ -297,6 +304,9 @@ h2 {
     input[type=checkbox]:checked ~ section{
         display: block;
     }
+    footer {
+        font-size:20px;
+    }
 
 @media only screen and (min-width: 1000px) {
     #contactlist {
@@ -316,5 +326,69 @@ h2 {
 
     }
     }
+    #recipe1{
+        position: relative;
+        text-align: center;
+        color: $text2;
+    
+    .butrum {
+        position: absolute;
+        top: 5vh;
+        left: 12vw;
+        background-color: $text1;
+        opacity: 0%;
+        width: 35%;
+        height: 40%;
+    }
+    .butrum:hover {
+            opacity: 80%;
+    }
+    
+    .hevglit {
+        position: absolute;
+        top: 5vh;
+        right: 12vw;
+        background-color: $text1;
+        opacity: 0%;
+        width: 35%;
+        height: 40%;
+    }
+    .hevglit:hover {
+        opacity: 80%;
+
+    }
+    .gorgeous {
+        position: absolute;
+        bottom: 5vh;
+        left: 12vw;
+        background-color: $text1;
+        opacity: 0%;
+        width: 35%;
+        height: 40%;
+    }
+    .gorgeous:hover {
+        opacity: 80%;
+
+    }
+    .cazzo {
+        position: absolute;
+            bottom: 5vh;
+            right: 20vw;
+            background-color: $text1;
+            opacity: 0%;
+            right: 12vw;
+            width: 35%;
+            height: 40%;
+    }
+    .cazzo:hover {
+        opacity: 80%;
 }
+}
+footer {
+    font-size:20px;
+}
+}
+
+
+
 
