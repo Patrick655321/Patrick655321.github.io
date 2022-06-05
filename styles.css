@@ -7,6 +7,13 @@
 @font-face {
   font-family: pfont;
   src: url(./fonts/spacemono.ttf); }
+p {
+  padding: 0vw 5vw; }
+
+section {
+  padding-left: 3vw;
+  padding-right: 3vw; }
+
 p a:hover {
   background-color: #B1A296; }
 
@@ -23,7 +30,8 @@ header ul {
     background-color: #5D5C61;
     border-radius: 20%;
     padding: 1vw;
-    margin: 1vw; }
+    margin: 1vw;
+    font-size: x-small; }
 
 body {
   font-family: pfont;
@@ -38,7 +46,8 @@ body {
     background-color: #7395AE;
     color: #000000;
     font-size: 10vw;
-    font-family: h1font; }
+    font-family: h1font;
+    padding: 3vh; }
   body h2 {
     padding: 5vw; }
 
@@ -110,65 +119,82 @@ footer {
 h2 {
   text-align: center; }
 
-.blogs h3 {
-  padding-top: 5vw; }
-.blogs h4 {
-  padding-top: 1vw; }
-.blogs #pictub {
+.workbody {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
-  .blogs #pictub img {
-    border-radius: 20%; }
-  .blogs #pictub #recipe1 {
-    position: relative;
-    text-align: center;
-    color: #ffffff; }
-    .blogs #pictub #recipe1 .butrum {
-      position: absolute;
-      top: 5vh;
-      left: 12vw;
-      background-color: #000000;
-      opacity: 0%;
-      width: 35%;
-      height: 40%; }
-    .blogs #pictub #recipe1 .hevglit {
-      position: absolute;
-      top: 5vh;
-      right: 12vw;
-      background-color: #000000;
-      opacity: 0%;
-      width: 35%;
-      height: 35%; }
-    .blogs #pictub #recipe1 .gorgeous {
-      position: absolute;
-      bottom: 5vh;
-      left: 12vw;
-      background-color: #000000;
-      opacity: 0%;
-      width: 35;
-      height: 40%; }
-    .blogs #pictub #recipe1 .cazzo {
-      position: absolute;
-      bottom: 5vh;
-      right: 20vw;
-      background-color: #000000;
-      opacity: 0%;
-      right: 12vw;
-      width: 35%;
-      height: 40%; }
-  .blogs #pictub #pictub2 {
+  align-items: center;
+  flex-direction: column; }
+  .workbody .worktitle {
+    width: 25vw;
+    border-radius: 10%;
+    margin-bottom: 5vw; }
+
+body .bloglist li {
+  padding-left: 5vw; }
+
+.blogs {
+  text-align: center; }
+  .blogs h3 {
+    padding-top: 5vw; }
+  .blogs h4 {
+    padding-top: 1vw; }
+  .blogs p {
+    padding: 3vh; }
+  .blogs #pictub {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; }
-    .blogs #pictub #pictub2 .blogpic {
+    .blogs #pictub img {
       border-radius: 20%; }
-    .blogs #pictub #pictub2 img {
+    .blogs #pictub #recipe1 {
+      position: relative;
+      text-align: center;
+      color: #ffffff; }
+      .blogs #pictub #recipe1 .butrum {
+        position: absolute;
+        top: 5vh;
+        left: 12vw;
+        background-color: #000000;
+        opacity: 0%;
+        width: 35%;
+        height: 40%; }
+      .blogs #pictub #recipe1 .hevglit {
+        position: absolute;
+        top: 5vh;
+        right: 12vw;
+        background-color: #000000;
+        opacity: 0%;
+        width: 35%;
+        height: 35%; }
+      .blogs #pictub #recipe1 .gorgeous {
+        position: absolute;
+        bottom: 5vh;
+        left: 12vw;
+        background-color: #000000;
+        opacity: 0%;
+        width: 35;
+        height: 40%; }
+      .blogs #pictub #recipe1 .cazzo {
+        position: absolute;
+        bottom: 5vh;
+        right: 20vw;
+        background-color: #000000;
+        opacity: 0%;
+        right: 12vw;
+        width: 35%;
+        height: 40%; }
+    .blogs #pictub #pictub2 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .blogs #pictub #pictub2 .blogpic {
+        border-radius: 20%; }
+      .blogs #pictub #pictub2 img {
+        height: 25vw;
+        padding: 1vw; }
+    .blogs #pictub img {
       height: 25vw;
       padding: 1vw; }
-  .blogs #pictub img {
-    height: 25vw;
-    padding: 1vw; }
 
 #contactlist {
   display: flex;
