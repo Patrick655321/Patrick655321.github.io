@@ -10,6 +10,9 @@
 p a:hover {
   background-color: #B1A296; }
 
+li:hover {
+  background-color: #B1A296; }
+
 * {
   margin: 0vw;
   padding: 0vw; }
@@ -43,7 +46,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  height: 60vh;
   border-radius: 30%; }
 
 #navbar {
@@ -139,7 +142,7 @@ h2 {
       height: 35%; }
     .blogs #pictub #recipe1 .gorgeous {
       position: absolute;
-      bottom: 10vh;
+      bottom: 5vh;
       left: 12vw;
       background-color: #000000;
       opacity: 0%;
@@ -232,53 +235,58 @@ footer {
       transition: 3s;
       animation-iteration-count: 5; }
 
-  #recipe1 {
-    position: relative;
-    text-align: center;
-    color: #ffffff; }
-    #recipe1 .butrum {
-      position: absolute;
-      top: 5vh;
-      left: 12vw;
-      background-color: #000000;
-      opacity: 0%;
-      width: 35%;
-      height: 40%; }
-    #recipe1 .butrum:hover {
-      opacity: 80%; }
-    #recipe1 .hevglit {
-      position: absolute;
-      top: 5vh;
-      right: 12vw;
-      background-color: #000000;
-      opacity: 0%;
-      width: 35%;
-      height: 40%; }
-    #recipe1 .hevglit:hover {
-      opacity: 80%; }
-    #recipe1 .gorgeous {
-      position: absolute;
-      bottom: 5vh;
-      left: 12vw;
-      background-color: #000000;
-      opacity: 0%;
-      width: 35%;
-      height: 40%; }
-    #recipe1 .gorgeous:hover {
-      opacity: 80%; }
-    #recipe1 .cazzo {
-      position: absolute;
-      bottom: 5vh;
-      right: 20vw;
-      background-color: #000000;
-      opacity: 0%;
-      right: 12vw;
-      width: 35%;
-      height: 40%; }
-    #recipe1 .cazzo:hover {
-      opacity: 80%; }
-
-  footer {
-    font-size: 20px; } }
+  #pictub {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #pictub img {
+      border-radius: 20%; }
+    #pictub #recipe1 {
+      position: relative;
+      text-align: center;
+      color: #ffffff; }
+      #pictub #recipe1 .butrum {
+        position: absolute;
+        top: 5vh;
+        left: 12vw;
+        background-color: #000000;
+        opacity: 0%;
+        width: 35%;
+        height: 40%; }
+      #pictub #recipe1 .butrum:hover {
+        opacity: 80%; }
+      #pictub #recipe1 .hevglit {
+        position: absolute;
+        top: 5vh;
+        right: 12vw;
+        background-color: #000000;
+        opacity: 0%;
+        width: 35%;
+        height: 40%; }
+      #pictub #recipe1 .hevglit:hover {
+        opacity: 80%; }
+      #pictub #recipe1 .gorgeous {
+        position: absolute;
+        bottom: 5vh;
+        left: 12vw;
+        background-color: #000000;
+        opacity: 0%;
+        width: 35%;
+        height: 40%; }
+      #pictub #recipe1 .gorgeous:hover {
+        opacity: 80%; }
+      #pictub #recipe1 .cazzo {
+        position: absolute;
+        bottom: 5vh;
+        right: 20vw;
+        background-color: #000000;
+        opacity: 0%;
+        right: 12vw;
+        width: 35%;
+        height: 40%; }
+      #pictub #recipe1 .cazzo:hover {
+        opacity: 80%; }
+    #pictub footer {
+      font-size: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */

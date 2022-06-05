@@ -1,3 +1,4 @@
+// The following CSS sheet stylizes image sizes, font, colours, cropping, overlay, animations and checkbox functions.
 $back1: #557a95; 
 $back2: #7395AE;
 $text1 : #000000;
@@ -28,7 +29,7 @@ $sec2: #5D5C61;
             border-radius: 50%;
             width: 50vw;
             height: 50vw;
-            background-color: #557a95;
+            background-color: $back1;
         }
     }
 
@@ -43,7 +44,7 @@ $sec2: #5D5C61;
         }
     }
 }
-
+// The following uses flexbox to make adaptive display for the nav bar
 @mixin navbar() {
     display: flex;
     justify-content: center;
@@ -67,8 +68,11 @@ $sec2: #5D5C61;
     
     }
 }
-
+// The following uses pseudoclass :hover to allow highlighted anchors
 p a:hover{
+    background-color: $sec1;
+}
+li:hover {
     background-color: $sec1;
 }
 
@@ -106,7 +110,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    height: 60vh;
     border-radius: 30%;
 }
 
@@ -119,7 +123,7 @@ body {
     flex-direction: column;
     justify-content: center;
     }
-
+// the following allows the menu items on the front page to scale up and lose their background when hovered.
 #imgcont a:hover{
     background-color: transparent;
     .menimg {
@@ -133,6 +137,7 @@ body {
 .clickbait {
     text-align: center;
 }
+//  Th following keeps text hidden until user clicks picture
 #whoami {
     display: none;
 }
@@ -142,10 +147,11 @@ body {
 section {
     padding-top: 10vh;
 }
+// the following displays content when user interacts (clicks)
 input[type=checkbox]:checked ~ section{
     display: block;
 }
-
+// the footer is another textual component that uses flexbox to adapt different viewport widths
 footer {
     display: block;
     position: fixed;
@@ -170,6 +176,7 @@ h2 {
     h4 {
         padding-top: 1vw;
     }
+    // the following is the container used to align flex item images throughout blog
     #pictub {        
         display: flex;
         justify-content: center;
@@ -183,7 +190,7 @@ h2 {
             position: relative;
             text-align: center;
             color: $text2;
-        
+        // the folloowing keep the text hidden on phones but ready to display when hovered on larger viewports
         .butrum {
             position: absolute;
             top: 5vh;
@@ -206,7 +213,7 @@ h2 {
 
         .gorgeous {
             position: absolute;
-            bottom: 10vh;
+            bottom: 5vh;
             left: 12vw;
             background-color: $text1;
             opacity: 0%;
@@ -246,7 +253,7 @@ h2 {
 }
 
 
-
+// This allows for the arrnging of icons in responsive design
 #contactlist {
     display: flex;
     justify-content: center;
@@ -257,7 +264,7 @@ h2 {
         padding: 5vw;
 }
 
-
+// media break for tablet
 @media only screen and (min-width: 800px) {
 
     #contactlist {
@@ -307,7 +314,7 @@ h2 {
     footer {
         font-size:20px;
     }
-
+// media break for larger viewport (eg PC)
 @media only screen and (min-width: 1000px) {
     #contactlist {
         display: flex;
@@ -326,6 +333,16 @@ h2 {
 
     }
     }
+
+    #pictub {        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        img {
+                border-radius: 20%;
+            
+        }
+
     #recipe1{
         position: relative;
         text-align: center;
@@ -388,6 +405,8 @@ footer {
     font-size:20px;
 }
 }
+}
+
 
 
 
