@@ -211,10 +211,13 @@ body .bloglist li {
     flex-wrap: wrap;
     height: 100vw; }
 
+  #contactlist:hover {
+    background-color: transparent; }
+
   .conli {
     height: 20vw;
     width: 20vw;
-    padding: 15vw; }
+    padding: 10vw; }
 
   #imgcont {
     display: flex;
@@ -226,7 +229,6 @@ body .bloglist li {
       display: inline; }
     #imgcont .menimg {
       padding: 5vw;
-      border-radius: 50%;
       width: 30vw;
       height: 30vw;
       margin: 0px; } }
@@ -259,7 +261,8 @@ footer {
     #contactlist .conli:hover {
       transform: rotate(360deg) scale(1.5);
       transition: 3s;
-      animation-iteration-count: 5; }
+      animation-iteration-count: 5s;
+      background-color: transparent; }
 
   #pictub {
     display: flex;
