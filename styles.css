@@ -25,7 +25,8 @@ li:hover {
   padding: 0vw; }
 
 header ul {
-  list-style: none; }
+  list-style: none;
+  width: 100vw; }
   header ul li {
     background-color: #5D5C61;
     border-radius: 20%;
@@ -68,9 +69,12 @@ body {
   #navbar ul {
     display: flex;
     justify-content: center;
-    list-style: none; }
+    list-style: none;
+    width: 100vw;
+    z-index: 3; }
     #navbar ul .conli {
       height: 5vh;
+      width: 100vw;
       padding: 2vw; }
       #navbar ul .conli li {
         background-color: #5D5C61;
@@ -125,8 +129,7 @@ h2 {
   align-items: center;
   flex-direction: column; }
   .workbody .worktitle {
-    width: 25vw;
-    border-radius: 10%;
+    border-radius: 50%;
     margin-bottom: 5vw; }
 
 body .bloglist li {
@@ -156,8 +159,16 @@ body .bloglist li {
         left: 12vw;
         background-color: #000000;
         opacity: 0%;
-        width: 35%;
+        width: 34%;
+        height: 25%;
         height: 40%; }
+      .blogs #pictub #recipe1 .butrum:hover {
+        opacity: 80%;
+        top: 2vh;
+        width: 34%;
+        height: 25%;
+        left: 12.5vw;
+        font-size: 1vh; }
       .blogs #pictub #recipe1 .hevglit {
         position: absolute;
         top: 5vh;
@@ -166,14 +177,27 @@ body .bloglist li {
         opacity: 0%;
         width: 35%;
         height: 35%; }
+      .blogs #pictub #recipe1 .hevglit:hover {
+        opacity: 80%;
+        top: 2vh;
+        width: 34%;
+        right: 13vw;
+        font-size: 1vh; }
       .blogs #pictub #recipe1 .gorgeous {
         position: absolute;
         bottom: 5vh;
         left: 12vw;
         background-color: #000000;
         opacity: 0%;
-        width: 35;
+        width: 35%;
         height: 40%; }
+      .blogs #pictub #recipe1 .gorgeous:hover {
+        opacity: 80%;
+        bottom: 2vh;
+        width: 34%;
+        height: 25%;
+        left: 13vw;
+        font-size: 1vh; }
       .blogs #pictub #recipe1 .cazzo {
         position: absolute;
         bottom: 5vh;
@@ -183,6 +207,13 @@ body .bloglist li {
         right: 12vw;
         width: 35%;
         height: 40%; }
+      .blogs #pictub #recipe1 .cazzo:hover {
+        opacity: 80%;
+        bottom: 5vh;
+        width: 34%;
+        height: 25%;
+        right: 12vw;
+        font-size: 1vh; }
     .blogs #pictub #pictub2 {
       display: flex;
       justify-content: center;
@@ -276,7 +307,7 @@ footer {
       color: #ffffff; }
       #pictub #recipe1 .butrum {
         position: absolute;
-        top: 5vh;
+        top: 10vh;
         left: 12vw;
         background-color: #000000;
         opacity: 0%;
@@ -296,7 +327,7 @@ footer {
         opacity: 80%; }
       #pictub #recipe1 .gorgeous {
         position: absolute;
-        bottom: 5vh;
+        bottom: 10vh;
         left: 12vw;
         background-color: #000000;
         opacity: 0%;

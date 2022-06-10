@@ -1,4 +1,6 @@
 // The following CSS sheet stylizes image sizes, font, colours, cropping, overlay, animations and checkbox functions.
+// Text component (component #9) - entire site) text is stylized using CSS and imported fonts.
+// Image element (component #10 - entire site) images are stylized using CSS and SASS.
 $back1: #557a95; 
 $back2: #7395AE;
 $text1 : #000000;
@@ -36,6 +38,7 @@ $sec2: #5D5C61;
 @mixin nav1() {
     ul {
         list-style: none;
+        width: 100vw;
         li {
             background-color: $sec2;
             border-radius: 20%;
@@ -58,8 +61,11 @@ $sec2: #5D5C61;
         display: flex;
         justify-content: center;
         list-style: none;
+        width: 100vw;
+        z-index: 3;
         .conli {
         height: 5vh;
+        width: 100vw;
         padding: 2vw;
         li {
             background-color: $sec2;
@@ -185,8 +191,7 @@ h2 {
     align-items:center;
     flex-direction: column;
     .worktitle {
-        width: 25vw;
-        border-radius: 10%;
+        border-radius: 50%;
         margin-bottom: 5vw;;
     }
 }
@@ -224,16 +229,24 @@ body {
             position: relative;
             text-align: center;
             color: $text2;
-        // the folloowing keep the text hidden on phones but ready to display when hovered on larger viewports
+        // the folloowing is for the hover: text overlay on images
         .butrum {
             position: absolute;
             top: 5vh;
             left: 12vw;
             background-color: $text1;
             opacity: 0%;
-            width: 35%;
+            width: 34%;
+            height: 25%;
             height: 40%;
         }
+        .butrum:hover {
+            opacity: 80%;
+            top: 2vh;
+            width: 34%;
+            height: 25%;
+            left: 12.5vw;
+            font-size: 1vh;}
 
         .hevglit {
             position: absolute;
@@ -244,6 +257,12 @@ body {
             width: 35%;
             height: 35%;
         }
+        .hevglit:hover {
+            opacity: 80%;
+            top: 2vh;
+            width: 34%;
+            right: 13vw;
+            font-size: 1vh;}
 
         .gorgeous {
             position: absolute;
@@ -251,9 +270,16 @@ body {
             left: 12vw;
             background-color: $text1;
             opacity: 0%;
-            width: 35;
+            width: 35%;
             height: 40%;
         }
+        .gorgeous:hover {
+            opacity: 80%;
+            bottom: 2vh;
+            width: 34%;
+            height: 25%;
+            left: 13vw;
+            font-size: 1vh;}
 
         .cazzo {
             position: absolute;
@@ -265,6 +291,13 @@ body {
                 width: 35%;
                 height: 40%;
         }
+        .cazzo:hover {
+            opacity: 80%;
+            bottom: 5vh;
+            width: 34%;
+            height: 25%;
+            right: 12vw;
+            font-size: 1vh;}
 }
     #pictub2 {        
         display: flex;
@@ -386,7 +419,7 @@ body {
     
     .butrum {
         position: absolute;
-        top: 5vh;
+        top: 10vh;
         left: 12vw;
         background-color: $text1;
         opacity: 0%;
@@ -412,7 +445,7 @@ body {
     }
     .gorgeous {
         position: absolute;
-        bottom: 5vh;
+        bottom: 10vh;
         left: 12vw;
         background-color: $text1;
         opacity: 0%;
